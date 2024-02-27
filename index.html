@@ -2,291 +2,293 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Rishav Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Portfolio Website</title>
 </head>
 
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>R</span>ishav </h1>
-          </a>
+
+    <!-- HEADER DESIGN -->
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#timeline-section">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--HOME SECTION DESIGN -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Rishav Shah</h1>
+            <h3>And I'm a <span class="multiple-text"></span> </h3>
+            <p>I am a recent graduate currently pursuing a Master of Computer Applications (M.C.A.) degree from the
+                National Institute of Technology, Jamshedpur. </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/rishav.shah.148" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/Risu552" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/rishav19p_/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rishav97/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="Rishav_resume.pdf" target="_blank" class="btn">Download CV</a>
         </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#experiences" data-after="Experience">Experience</a></li>
-            <li><a href="#Educations" data-after="Experience">Education</a></li>
-            <li><a href="#Skills" data-after="Home">Skills</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
+        <div class="home-img">
+            <img src="image/rishav.jpg" alt="img" style="border-radius: 50%;">
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Header -->
-
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hi  <span></span></h1>
-        <h1> there, I'm<span></span></h1>
-        <h1>Rishav Shah <span></span></h1>
-        
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!-- Experience Section -->
-   <section id="experiences">
-    <div class="experiences container">
-      <div class="experience-top">
-        <h1 class="section-title">Experience</h1>
-      
-      </div>
-      <div class="experience-bottom">
-         <div class="experience-item">
-          <div class="ex_container">
-            <h1>TATA CONSULTANCY SERVICES, KOLKATA</h1>
-            <!-- <div class="icon"><img src="./img/tcs.png" alt="TCS Logo"/></div> -->
-          </div>
-          <h2>Programmer</h2>
-          <h3>Feb 2021 - June 2022</h3>
-          <p>         
-            <ul>
-              <li>Orchestrated comprehensive server maintenance and database oversight for a client, ensuring seamless operations and heightened efficiency.</li>
-              <li>Implemented vital support measures such as regular data backups, timely server patch updates, streamlined user profile setup for new employees, proactive storage management, and proficient troubleshooting of server access and authorization issues, resulting in increased operational efficiency and reduced downtime.</li>
-              <li>Played a pivotal role in maintaining system integrity and continuity, contributing to the reliability and functionality of the client’s infrastructure.</li>
-            </ul>
-           
-            </p>        
-          </div>
-       
-      </div>
-    </div>
-  </section>
- <!-- End Experience Section -->
-
-  <!-- Education Section -->
-  <section id="Educations">
-    <div class="Educations container">
-      <div class="Education-top">
-        <h1 class="section-title">Education</h1>
-      
-      </div>
-      <div class="Education-bottom">
-         <div class="Education-item">
-
-          <div class="school">
-            <h2>NATIONAL INSTITUTE OF TECHNOLOGY, JAMSHEDPUR</h2>
-            <h3>Jul. 2022 - Jul 2025</h3>
-            <p>Masters of Computer Application (7.4 CGPA)</p>
         </div>
-        <br><br><br>
-        <div class="school">
-            <h2>TECHNO INDIA INSTITUTE OF TECHNOLOGY, KOLKATA</h2>
-            <h3>Jul. 2017 - Jul 2020</h3>
-            <p>Bachelor of Computer Application (7.87 CGPA)</p>
-        </div>
-      
+    </section>
 
-
-        <!-- 12th Standard (2016)
-          Percentage – 73.5 %
-
-        10th Standard (2014)
-          Percentage – 85.8 % -->
-
-                  
-          </div>
-       
-      </div>
-    </div>
-  </section>
- <!-- End Education Section -->
-
-
-   <!-- Skill Section -->
-   <section id="Skills">
-    <div class="Skills container">
-      <div class="Skills-top">
-        <h1 class="section-title"> Technical Skills</h1>
-      
-      </div>
-      <div class="Skills-bottom">
-         <div class="Skills-item">
-
-        <div class="school">
-            <h2>Technologies / Frameworks:</h2>
-            <h3> DSA, Linux, React, NodeJs, Express, Bootstrap</h3>
-        </div>
-        <br><br>
-
-        <div class="school">
-          <h2>Programming Languages:</h2>
-          <h3> C, C++, Java, JavaScript, Python,  PHP</h3>
-      </div>
-      <br><br>
-
-      <div class="school">
-        <h2>Databases:</h2>
-        <h3>MongoDB, SQL</h3>
-    </div>
-    <br><br>
-      
-                    
-          </div>
-       
-      </div>
-    </div>
-  </section>
- <!-- End Skill Section -->
-
-
-
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent Projects<span></span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1> Question Paper Generator</h1>
-            <h2>Examiner Paper Setup Support</h2>
-            <p>Led development of a Node.js & MongoDB-based Question Paper Generator, optimizing question organization by type, subject, difficulty, and marks, cutting administrative tasks by 40%. Engineered algorithmic solutions for varied, accurate assessments with dynamic mark distributions across difficulty levels.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/qpg.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Text File Compression Tool</h1>
-            <h2>Efficient File Compression</h2>
-            <p>I designed a text file compression tool in C/C++ using Visual Studio Code, reducing file sizes by 60% without data loss. Rigorous testing and debugging ensured its reliability and efficiency, showcasing my programming skills and commitment to innovative solutions.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/3226131_43076.jpg" alt="img">
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-info">
-            <h1> E-Commerce Website</h1>
-            <h2>Seemless Shopping Experience</h2>
-              <p>Led the creation of an interactive e-commerce platform for admins and customers, enhancing product management. Developed a streamlined interface for admins, cutting update time by 30%. Engineered user-friendly features for easy customer access and purchases</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/e_commerce.png" alt="img">
-          </div>
-        </div>
-       
-      
-         
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
+    <!--ABOUT SECTION DESIGN -->
+    <section class="about" id="about">
         <div class="about-img">
-          <img src="./img/rishav.jpg" alt="img">
+            <img src="image/aboutpic.jpg" alt="aboutpic">
         </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About me <span></span></h1>
-        <h2> Aspiring Tech Professional</h2>
-        <p>
-          I am a recent graduate pursuing a Master of Computer Applications (M.C.A.) degree from the National Institute of Technology, Jamshedpur. With a solid foundation in computer science and a genuine passion for problem-solving, I'm excited to apply my skills in a professional setting.
-          Collaboration is a core value of mine, and I thrive in team environments that foster knowledge exchange and idea contribution. My ability to quickly learn and adapt, coupled with my friendly and outgoing nature, enables me to efficiently handle new challenges, even under pressure.
-         <br> Notably, I bring 1 year and 4 months of valuable work experience from Tata Consultancy Experiences (TCS), where I gained practical insights into the IT industry. My objective is to join an  organization where I can leverage my abilities and continue to grow both personally and professionally.
-         </p>
-        <a href="Rishav_resume.pdf" target="_blank" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>Me</span></h2>
+            <!-- <h3>Frontend Developer</h3> -->
+            <br>
+            <p>I am a recent graduate pursuing a Master of Computer Applications (M.C.A.) degree from the National
+                Institute of Technology, Jamshedpur. With a solid foundation in computer science and a genuine passion
+                for problem-solving, I'm excited to apply my skills in a professional setting. Collaboration is a core
+                value of mine, and I thrive in team environments that foster knowledge exchange and idea contribution.
+                My ability to quickly learn and adapt, coupled with my friendly and outgoing nature, enables me to
+                efficiently handle new challenges, even under pressure.
+                Notably, I bring 1 year and 4 months of valuable work experience from Tata Consultancy Experiences
+                (TCS), where I gained practical insights into the IT industry. My objective is to join an organization
+                where I can leverage my abilities and continue to grow both personally and professionally.</p>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact info</h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+91 8013073625</h2>
-          </div>
         </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>official.rishavs@gmail.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Kolkata, West Bengal, India</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
+    </section>
 
-  
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>R</span>ishav <span>S</span>hah</h1>
-      </div>
-      <h2>Your Aspiring Tech Professional</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.facebook.com/rishav.shah.148" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+    <!--Experience And Education Section Design -->
+    <section class="timeline-section" id="timeline-section">
+        <h2 class=" heading">Education &<span> Experience</span></h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022-2025</div>
+                <div class="timeline-content">
+                    <h1>NATIONAL INSTITUTE OF TECHNOLOGY, JAMSHEDPUR</h1>
+                    <h2>Masters of Computer Application (M.C.A.) </h2>
+                    <p>CGPA- 7.6 </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">FEB 2021 - JUNE 2022</div>
+                <div class="timeline-content">
+                    <h1>TATA CONSULTANCY SERVICES, KOLKATA</h1>
+                    <h2>Programmer</h2>
+                    <p>I managed comprehensive server maintenance for a client airline, boosting efficiency by 20% through meticulous planning and execution. By implementing crucial support measures like data backups, patch updates, and streamlined user setups, I reduced downtime by 35% while enhancing operational smoothness. My role in maintaining system integrity significantly contributed to the reliability of the client’s infrastructure, ensuring seamless operations and bolstering their confidence in their IT systems.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017-2020</div>
+                <div class="timeline-content">
+                    <h1>TECHNO INDIA INSTITUTE OF TECHNOLOGY, KOLKATA</h1>
+                    <h2>Bachelor of Computer Application (B.C.A.) </h2>
+                    <p>CGPA- 7.87 </p>
+                </div>
+            </div>
+
         </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/rishav19p_/" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+    </section>
+
+    <!--SKILLS SECTION DESIGN -->
+
+    <section class="skills" id="skills">
+        <h2 class=" heading">My <span> Skills</span></h2>
+        <div class="skills-box-container">
+            <div class="skills-box">
+                <img src="image/HTML.png" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/CSS.png" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/Javascript.svg" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/Bootstrap.svg" class="skill-logo" alt="">
+            </div>
+
+            <div class="skills-box">
+                <img src="image/React.png" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/Express.png" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/NodeJs.svg" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/MongoDB.svg" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/c.png" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/c++.png" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/java.png" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/python.png" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/linux.svg" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/Next.svg" class="skill-logo" alt="">
+            </div>
+            <div class="skills-box">
+                <img src="image/tailwind.png" class="skill-logo" alt="">
+            </div>
         </div>
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/rishav97/" target="_blank"><img  src="./img/linkedin.png" /></a>
+    </section>
+
+
+    <!-- PORTFOLIO SECTION DESIGN-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="image/real-estate.jpg" alt="image">
+                <div class="portfolio-layer">
+                    <h4>Real Estate </h4>
+                    <p>Unlock your dream property with seamless real estate solutions tailored to your needs.</p>
+                    <a href="https://github.com/rishavs001/Real-Estate" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image/study-notion.png" alt="image">
+                <div class="portfolio-layer">
+                    <h4>Study Notion</h4>
+                    <p>Online tutor Website: "Elevate your learning journey with a personalized online tutor platform powered by Study-Notion.</p>
+                    <a href="https://github.com/rishavs001/StudyNotion" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/question-paper-generator.png" alt="image">
+                <div class="portfolio-layer">
+                    <h4>Question Paper Generator</h4>
+                    <p>Streamline exam prep effortlessly with our intuitive question paper generator.</p>
+                    <a href="https://github.com/rishavs001/ques-paper-generator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image/text-compressor.jpg" alt="image">
+                <div class="portfolio-layer">
+                    <h4>iCompressor</h4>
+                    <p>Maximize storage efficiency without compromising content quality with our innovative text file compressor.</p>
+                    <a href="https://github.com/rishavs001/iCompressor" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image/simon.png" alt="image">
+                <div class="portfolio-layer">
+                    <h4>Simon Game</h4>
+                    <p>Indulge in a classic memory challenge with a modern twist in our captivating Simon Game.</p>
+                    <a href="https://github.com/rishavs001/Simon-Game" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image/password-generator.png" alt="image">
+                <div class="portfolio-layer">
+                    <h4>Password Generator</h4>
+                    <p>Fortify your digital security with unbreakable passwords generated at your fingertips.</p>
+                    <a href="https://github.com/rishavs001/Password-Generator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image/todolist.jpg" alt="image">
+                <div class="portfolio-layer">
+                    <h4>To Do List</h4>
+                    <p>Organize tasks effortlessly and stay on top of your day with our intuitive To-Do List app.</p>
+                    <a href="https://github.com/rishavs001/To-Do-List" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image/weather-forcast.jpg" alt="image">
+                <div class="portfolio-layer">
+                    <h4>Weather Forecast</h4>
+                    <p>Stay ahead of the elements with accurate weather forecasts tailored to your location.</p>
+                    <a href="https://github.com/rishavs001/Weather-Forecast" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image/drum-kit.jpg" alt="image">
+                <div class="portfolio-layer">
+                    <h4>Drum Kit</h4>
+                    <p>Unleash your inner drummer and create rhythmic masterpieces with our virtual drum kit instrumental.</p>
+                    <a href="https://github.com/rishavs001/Drum-Kit" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
         </div>
-      </div>
-      <p>Copyright © 2022 Rishav Shah. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+    </section>
+
+
+    <!-- CONTACT SECTION DESIGN -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="mailto:official.rishavs@gmail.com" method="post" enctype="text/plain">
+            <div class="input-box">
+                <input type="text" name="Full Name" placeholder="Full Name">
+                <input type="email" name="Email Address" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="tel" name="Mobile Number" placeholder="Mobile Number">
+                <input type="text" name="Email Subject" placeholder="Email Subject">
+            </div>
+
+            <textarea name="Your Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+
+    <!-- FOOTER DESIGN -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @Rishav Shah | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Main JS -->
+    <script src="./main.js"></script>
+
 </body>
 
 </html>
-
-
