@@ -13,7 +13,7 @@ function SendMail(e) {
     emailjs.send("service_9cclw2w","template_l0ueb2k",params)
     .then((res) => {
       // console.log('Email sent successfully:', response);
-      alert('Email sent successfully! from script.js');
+      alert('Email sent successfully!');
     //   Clear the form after successful submission
       e.target.reset();
     }, (error) => {
