@@ -9,10 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!--Main CSS-->
     <link rel="stylesheet" href="./styles.css">
-    <title>Portfolio Website</title>
+
+<!-- Include EmailJS library --> 
+<script src="./script.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init( "vBMFmJIf5oHrGeQxI");
+    })();
+ </script>
+
+    <title>Rishav Shah</title>
 </head>
 
 <body>
@@ -252,26 +261,27 @@
     </section>
 
 
-    <!-- CONTACT SECTION DESIGN -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="mailto:official.rishavs@gmail.com" method="post" enctype="text/plain">
-            <div class="input-box">
-                <input type="text" name="Full Name" placeholder="Full Name">
-                <input type="email" name="Email Address" placeholder="Email Address">
-            </div>
 
-            <div class="input-box">
-                <input type="tel" name="Mobile Number" placeholder="Mobile Number">
-                <input type="text" name="Email Subject" placeholder="Email Subject">
-            </div>
 
-            <textarea name="Your Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+<!-- CONTACT SECTION DESIGN -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form id="myForm">
+        <div class="input-box">
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+            <input type="email" id="emailId" name="emailId" placeholder="Email Address" required>
+        </div>
 
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
+        <div class="input-box">
+            <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number">
+            <input type="text" id="emailSubject" name="emailSubject" placeholder="Email Subject">
+        </div>
 
+        <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <button onclick="SendMail(event)" class="btn">Send Message</button>
+
+    </form>
+</section>
 
     <!-- FOOTER DESIGN -->
     <footer class="footer">
