@@ -1,8 +1,7 @@
 //emailJS
 function SendMail(e) {
     e.preventDefault();
-    alert('Sending your message');
-   
+    // alert('Sending your message');
     let params = {
       from_name : document.getElementById("fullName").value,
       email_id : document.getElementById("emailId").value,
