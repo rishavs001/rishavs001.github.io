@@ -573,3 +573,56 @@ contact form textarea {
     flex: 0 0 calc(30.666% - 10px); /* Adjust the width as per your requirement */
   }
 }
+
+/* //---------------------------------- */
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c5a400;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  z-index: 999;
+  display: none;
+}
+
+.toast.success {
+  background-color: green;
+}
+
+.toast.failure {
+  background-color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #f0f0f0;
+  z-index: 998;
+}
+
+#loading-progress {
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  animation: progress 2s linear forwards;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
