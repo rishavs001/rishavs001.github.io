@@ -34,14 +34,14 @@ function SendMail(e) {
 
   emailjs.send("service_9cclw2w", "template_l0ueb2k", params)
       .then((res) => {
-        toast.innerText = 'Success!';
+        toast.innerText = 'Message sent successfully!';
       toast.classList.add('success');
         //   alert('Email sent successfully!');
           // Clear the form after successful submission
           document.getElementById("myForm").reset();
       })
       .catch((error) => {
-        toast.innerText = 'Failure!';
+        toast.innerText = 'Failure. Please try again!';
       toast.classList.add('failure');
         //   alert('An error occurred while sending the email: ' + error);
       });
